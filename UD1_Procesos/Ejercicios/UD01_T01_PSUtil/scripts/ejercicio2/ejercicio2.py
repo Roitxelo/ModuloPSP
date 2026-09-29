@@ -1,10 +1,10 @@
 import psutil
 
-def mostrar_servicio(servicio):
-    print(f"Nombre: {servicio.get('name')}")
-    print(f"PID: {servicio.get('pid') or 'Sin PID'}")
-    print(f"Estado: {servicio.get('status')}")
-    print(f"Tipo de inicio: {servicio.get('start_type')}")
+def mostrar_servicio(data):
+    print(f"Nombre: {data.get('name')}")
+    print(f"PID: {data.get('pid') or 'Sin PID'}")
+    print(f"Estado: {data.get('status')}")
+    print(f"Tipo de inicio: {data.get('start_type')}")
     print("------------------------------------------")
 
 def mostrar_todos():
